@@ -64,10 +64,7 @@ public class Solution {
         }
 
         //because there could still be character in the stack (uneven case)
-        if (!stack.isEmpty()) return false;
-
-        return true;
-
+        return stack.isEmpty()
     }
 
     public static void main(String[] args) {
