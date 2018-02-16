@@ -30,8 +30,12 @@ boolean isValidBST(Node node, int low, int high) {
 
     if (node == null) return true;
 
-   return node.data > low
-       && node.data < high
-       && isValidBST(node.left, low, node.data); //left substree
-       && isValidBST(node.right, node.data, high); //right substree
+    boolean valid = node.data > low
+                 && node.data < high
+                 && isValidBST(node.left, low, node.data) //left substree
+                 && isValidBST(node.right, node.data, high); //right substree
+
+    //System.out.println("Valid: " + valid + " low < " + low + " [" + node.data + "] " + high + " > high");
+
+    return valid;
 }
