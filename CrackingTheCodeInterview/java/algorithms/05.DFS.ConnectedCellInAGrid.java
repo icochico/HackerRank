@@ -18,6 +18,8 @@
 // Each line i of the n subsequent lines contains m space-separated integers describing
 // the respective values filling each row in the matrix.
 
+// Example
+//
 // Sample Input
 //
 // 4
@@ -29,6 +31,7 @@
 // Sample Output
 //
 // 5
+//
 // Explanation
 //
 // The diagram below depicts two regions of the matrix; for each region, the
